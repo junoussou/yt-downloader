@@ -65,4 +65,6 @@ if /i "%choice%"=="a" (
 )
 echo Merci d’avoir utilisé notre Téléchargeur YouTube !
 explorer "%foldername%"
+echo Version 0.0.1
+echo ---
 pause

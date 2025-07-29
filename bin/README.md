@@ -30,9 +30,6 @@ Un script Batch simple et efficace pour télécharger des vidéos ou audios depu
 
 ---
 
-## 📷 Exemple
-Bien sûr, Charles — voici un modèle complet de README.md pour ton projet Téléchargeur YouTube avec yt-dlp. Il est structuré pour être clair, attractif et prêt à accueillir de futures améliorations 🚀
-
 # 🎥 Téléchargeur YouTube avec yt-dlp
 
 Un script Batch simple et efficace pour télécharger des vidéos ou audios depuis YouTube à l’aide de [yt-dlp](https://github.com/yt-dlp/yt-dlp). Idéal pour sauvegarder des playlists, des podcasts ou des clips, ce projet évoluera avec de nouvelles fonctionnalités au fil du temps.
@@ -54,7 +51,7 @@ Un script Batch simple et efficace pour télécharger des vidéos ou audios depu
 ### 1. 📥 Prérequis
 
 - Télécharger [yt-dlp.exe](https://github.com/yt-dlp/yt-dlp/releases/latest) et le placer dans le même dossier que le script.
-- Lancer `youtube_downloader.bat`.
+- Lancer `downloader.bat`.
 
 ### 2. 🖥️ Étapes
 

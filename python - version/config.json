@@ -1,0 +1,6 @@
+{
+    "yt_dlp_executable": "yt-dlp.exe",
+    "default_format": "mp3",
+    "default_folder": "YT-DOWNLOADER",
+    "preferred_quality": "best"
+}

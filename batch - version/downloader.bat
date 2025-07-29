@@ -4,7 +4,7 @@ setlocal
 
 echo === Téléchargeur YouTube avec yt-dlp ===
 
-if not exist "yt-dlp.exe" (
+if not exist "../bin/yt-dlp.exe" (
     echo Erreur : yt-dlp.exe introuvable. Veuillez le placer dans le même dossier que ce script.
     pause
     exit /b
@@ -54,11 +54,11 @@ set /p choice="Audio ou Video ? (Tapez 'a' pour Audio ou 'v' pour Video) : "
 :: Vérifier le choix
 if /i "%choice%"=="a" (
     echo Téléchargement de(s^) audio(s^) en cours...
-    yt-dlp.exe -x --audio-format mp3 -o "%foldername%\%%(title)s.%%(ext)s" "%url%"
+    "%~dp0..\bin\yt-dlp.exe" -x --audio-format mp3 -o "%foldername%\%%(title)s.%%(ext)s" "%url%"
     echo Téléchargement terminé dans le dossier : %foldername%
 ) else if /i "%choice%"=="v" (
     echo Téléchargement de(s^) vidéo(s^) en cours...
-    yt-dlp.exe -f best -o "%foldername%\%%(title)s.%%(ext)s" "%url%"
+    "%~dp0..\bin\yt-dlp.exe" -f best -o "%foldername%\%%(title)s.%%(ext)s" "%url%"
     echo Téléchargement terminé dans le dossier : %foldername%
 ) else (
     echo Choix invalide. Veuillez relancer le script.
